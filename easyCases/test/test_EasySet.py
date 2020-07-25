@@ -175,3 +175,6 @@ class TestEasySet(unittest.TestCase):
                 "ngxlkthsjuoqcpavbfdermiywz"
             )
         )
+
+    def testAddStrings(self):
+        self.assertEqual(easySet.addStrings("3", "4"), "7")
