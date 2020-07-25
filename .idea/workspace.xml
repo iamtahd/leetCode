@@ -1,7 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0ba7217d-b6c6-4d64-9154-463caa37bb6e" name="Default Changelist" comment="" />
+    <list default="true" id="0ba7217d-b6c6-4d64-9154-463caa37bb6e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/leetCode.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vscode/settings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyCases/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyCases/easySet.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyCases/test/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/easyCases/test/test_EasySet.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/googleChallenges/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/googleChallenges/challenges.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/googleChallenges/test/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/googleChallenges/test/test_challenges.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/linkedList.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,7 +32,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1ZrsjmPRkPWLZ31q8VyjeGM60vH" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -149,7 +171,7 @@
       <workItem from="1588121237841" duration="694000" />
       <workItem from="1590102628035" duration="2793000" />
       <workItem from="1590426064838" duration="73000" />
-      <workItem from="1595701063355" duration="812000" />
+      <workItem from="1595701063355" duration="1420000" />
     </task>
     <servers />
   </component>
