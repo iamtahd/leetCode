@@ -434,6 +434,14 @@ def reverseLinkedList(head: ListNode) -> ListNode:
 
 
 def isAlienSorted(words: List[str], order: str) -> bool:
+    """
+    Asserts whether or not the list of words is sorted according
+    to the given 'order' string
+
+    :param words: list of strings to check for sortedness
+    :param order: sorting key
+    :rtype: bool
+    """
     orderIndex = {c: i for i, c in enumerate(order)}
 
     for i in range(len(words) - 1):
@@ -441,6 +449,11 @@ def isAlienSorted(words: List[str], order: str) -> bool:
         second = words[i + 1]
 
         for j in range(min(len(first), len(second))):
-            x=1
-
+            if first[j] != second[j]:
+                if orderIndex[first[j]] > orderIndex[second[j]]:
+                    return False
+                break
+        else:
+            if len(first) > len(second):
+                return False
     return True

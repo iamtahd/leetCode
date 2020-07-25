@@ -151,9 +151,27 @@ class TestEasySet(unittest.TestCase):
         )
 
     def testIsAlienSorted(self):
+        # self.assertTrue(
+        #     easySet.isAlienSorted(
+        #         ['hello', 'leetcode'],
+        #         'hlabcdefgijkmnopqrstuvwxyz'
+        #     )
+        # )
+        # self.assertFalse(
+        #     easySet.isAlienSorted(
+        #         ["word", "world", "row"],
+        #         order="worldabcefghijkmnpqstuvxyz"
+        #     )
+        # )
+        # self.assertFalse(
+        #     easySet.isAlienSorted(
+        #         ["apple", "app"],
+        #         "abcdefghijklmnopqrstuvwxyz"
+        #     )
+        # )
         self.assertTrue(
             easySet.isAlienSorted(
-                ['hello', 'leetcode'],
-                'hlabcdefgijkmnopqrstuvwxyz'
+                ["kuvp", "q"],
+                "ngxlkthsjuoqcpavbfdermiywz"
             )
         )
