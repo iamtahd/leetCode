@@ -126,7 +126,8 @@ def longestCommonPrefix(strs: List[str]) -> str:
     # print(letter_groups, longest_pre)
     # [('f', 'f', 'f'), ('l', 'l', 'l'), ('o', 'o', 'i'), ('w', 'w', 'g')]
     for letter_group in letter_groups:
-        if len(set(letter_group)) > 1: break
+        if len(set(letter_group)) > 1:
+            break
         longest_pre += letter_group[0]
     return longest_pre
 
@@ -377,7 +378,8 @@ def maxSubArray(nums: List[int]) -> int:
     :param nums: list of integers
     :return: largest sub possible from the subArray
     """
-    if not nums: return 0
+    if not nums:
+        return 0
     current_sum = maximum_sum = nums[0]
 
     for i in range(len(nums)):
@@ -403,11 +405,11 @@ def reorderLogFiles(logs: List[str]) -> List[str]:
     Return the final order of the logs.
     """
 
-    def filter(log):
+    def filter_(log):
         _id, rest = log.split(" ", 1)
         return (0, rest, _id) if rest[0].isalpha() else (1, )
 
-    return sorted(logs, key=filter)
+    return sorted(logs, key=filter_)
 
 
 def maxProfit(prices: List[int]) -> int:
