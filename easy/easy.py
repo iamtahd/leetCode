@@ -1,5 +1,6 @@
 from typing import List
-from utils.linkedList import ListNode, LinkedList
+
+from utils.linkedList import ListNode
 
 
 def twoSum(nums: List[int], target: int) -> List[int]:
@@ -16,7 +17,7 @@ def twoSum(nums: List[int], target: int) -> List[int]:
     cache = dict()
     for i in range(len(nums)):
         if target - nums[i] in cache:
-            return [cache[target-nums[i]], i]
+            return [cache[target - nums[i]], i]
         else:
             cache[nums[i]] = i
     return []
@@ -70,7 +71,7 @@ def isPalindrome(x: int) -> bool:
     else:
         for i in range(len(s) // 2 + 1):
             a = s[i]
-            b = s[-i-1]
+            b = s[-i - 1]
             if a != b:
                 return False
 
@@ -86,29 +87,14 @@ def romanToInt(s: str) -> int:
     :return: integer corresponding to the roman numeral
     :rtype: int
     """
-    d = {
-        'I': 1,
-        'V': 5,
-        'X': 10,
-        'L': 50,
-        'C': 100,
-        'D': 500,
-        'M': 1000
-    }
-    c = {
-        'IV': 4,
-        'IX': 9,
-        'XL': 40,
-        'XC': 90,
-        'CD': 400,
-        'CM': 900
-    }
+    d = {"I": 1, "V": 5, "X": 10, "L": 50, "C": 100, "D": 500, "M": 1000}
+    c = {"IV": 4, "IX": 9, "XL": 40, "XC": 90, "CD": 400, "CM": 900}
     ans = 0
     for _dict in [c, d]:
         for key, value in _dict.items():
             if key in s:
                 ans += value * s.count(key)
-                s = s.replace(key, '')
+                s = s.replace(key, "")
     return ans
 
 
@@ -148,11 +134,11 @@ def isValid(s: str) -> bool:
     :param str s: input string to validate
     :return: True if valid combination of brackets
     """
-    mapping = {']': '[', '}': '{', ')': '('}
+    mapping = {"]": "[", "}": "{", ")": "("}
     stack = []
     for char in s:
         if char in mapping:
-            top_element = stack.pop() if stack else '#'
+            top_element = stack.pop() if stack else "#"
             if mapping[char] != top_element:
                 return False
         else:
@@ -230,7 +216,7 @@ def removeDuplicates(nums: List[int]) -> int:
     if len(nums) == 0:
         return 0
     for i in range(1, len(nums)):
-        if nums[i] != nums[i-1]:
+        if nums[i] != nums[i - 1]:
             nums[d] = nums[i]
             d += 1
     return d
@@ -328,14 +314,15 @@ def countAndSayRegex(n: int) -> str:
     :return:
     """
     import re
-    current = '1'
-    pattern = r'((.)\2*)'
-    for i in range(n-1):
+
+    current = "1"
+    pattern = r"((.)\2*)"
+    for i in range(n - 1):
         nextSeq = []
         for g1, g2 in re.findall(pattern, current):
             nextSeq.append(str(len(g1)))
             nextSeq.append(g2)
-        current = ''.join(nextSeq)
+        current = "".join(nextSeq)
 
     return current
 
@@ -347,6 +334,7 @@ def countAndSayRecursion(n: int) -> str:
     :param n:
     :return:
     """
+
     def nextSequence(m: int, prevSeq):
         if m == 1:
             return prevSeq[:-1]
@@ -362,10 +350,10 @@ def countAndSayRecursion(n: int) -> str:
                 prevDigit = digit
                 digitCnt = 1
         # add a delimiter for the next sequence
-        nextSeq.append('E')
+        nextSeq.append("E")
         return nextSequence(m - 1, nextSeq)
 
-    return ''.join(nextSequence(n, ['1', 'E']))
+    return "".join(nextSequence(n, ["1", "E"]))
 
 
 # todo - look back over this one.
@@ -407,13 +395,13 @@ def reorderLogFiles(logs: List[str]) -> List[str]:
 
     def filter_(log):
         _id, rest = log.split(" ", 1)
-        return (0, rest, _id) if rest[0].isalpha() else (1, )
+        return (0, rest, _id) if rest[0].isalpha() else (1,)
 
     return sorted(logs, key=filter_)
 
 
 def maxProfit(prices: List[int]) -> int:
-    buy = float('inf')
+    buy = float("inf")
     profit = 0
 
     for i in range(len(prices)):

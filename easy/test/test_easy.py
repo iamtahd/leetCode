@@ -1,5 +1,5 @@
-from .. import easy
 from utils.linkedList import ListNode, LinkedList
+from .. import easy
 
 
 def assertLinkedListsAreEqual(l1: ListNode, l2: ListNode):
@@ -30,54 +30,49 @@ def testIsPalindrome():
 
 
 def testRomanToInt():
-    assert 3 == easy.romanToInt('III')
-    assert 4 == easy.romanToInt('IV')
-    assert 7 == easy.romanToInt('VII')
-    assert 9 == easy.romanToInt('IX')
+    assert 3 == easy.romanToInt("III")
+    assert 4 == easy.romanToInt("IV")
+    assert 7 == easy.romanToInt("VII")
+    assert 9 == easy.romanToInt("IX")
 
     # noinspection SpellCheckingInspection
-    assert 494 == easy.romanToInt('CDXCIV')
+    assert 494 == easy.romanToInt("CDXCIV")
 
     # noinspection SpellCheckingInspection
-    assert 1494 == easy.romanToInt('MCDXCIV')
+    assert 1494 == easy.romanToInt("MCDXCIV")
 
     # noinspection SpellCheckingInspection
-    assert 674 == easy.romanToInt('DCLXXIV')
+    assert 674 == easy.romanToInt("DCLXXIV")
 
 
 def testLongestCommonPrefix():
-    assert 'to' == easy.longestCommonPrefix([
-        'todd', 'tortuga', 'tomato'
-    ])
-    assert '' == easy.longestCommonPrefix([
-        "dog", "racecar", "car"
-    ])
+    assert "to" == easy.longestCommonPrefix(["todd", "tortuga", "tomato"])
+    assert "" == easy.longestCommonPrefix(["dog", "racecar", "car"])
 
 
 def testIsValid():
-    assert easy.isValid('')
-    assert easy.isValid('[]')
-    assert not easy.isValid('[(]')
-    assert not easy.isValid('[}')
-    assert not easy.isValid('{[}]')
-    assert easy.isValid('{}()[]')
-    assert easy.isValid('{[]}')
+    assert easy.isValid("")
+    assert easy.isValid("[]")
+    assert not easy.isValid("[(]")
+    assert not easy.isValid("[}")
+    assert not easy.isValid("{[}]")
+    assert easy.isValid("{}()[]")
+    assert easy.isValid("{[]}")
 
 
 def testMergeTwoLists():
     assertLinkedListsAreEqual(
         LinkedList([1, 2, 2, 3, 3, 4]).head,
         easy.mergeTwoListsIterative(
-            LinkedList([1, 2, 3]).head,
-            LinkedList([2, 3, 4]).head)
+            LinkedList([1, 2, 3]).head, LinkedList([2, 3, 4]).head
+        ),
     )
 
     assertLinkedListsAreEqual(
         LinkedList([1, 2, 2, 3, 3, 4]).head,
         easy.mergeTwoListsRecursive(
-            LinkedList([1, 2, 3]).head,
-            LinkedList([2, 3, 4]).head
-        )
+            LinkedList([1, 2, 3]).head, LinkedList([2, 3, 4]).head
+        ),
     )
 
 
@@ -102,12 +97,12 @@ def testRemoveElement():
 
 
 def testStrStr():
-    assert 2 == easy.strStr('hello', 'll')
-    assert 3 == easy.strStr('best test ever', 't')
+    assert 2 == easy.strStr("hello", "ll")
+    assert 3 == easy.strStr("best test ever", "t")
 
     # noinspection SpellCheckingInspection
-    assert -1 == easy.strStr('aaaaa', 'baa')
-    assert 0 == easy.strStr('hello', '')
+    assert -1 == easy.strStr("aaaaa", "baa")
+    assert 0 == easy.strStr("hello", "")
 
 
 def testSearchInsert():
@@ -118,13 +113,13 @@ def testSearchInsert():
 
 
 def testCountAndSay():
-    assert '1113213211' == easy.countAndSayRegex(8)
-    assert '13112221' == easy.countAndSayRegex(7)
-    assert '312211' == easy.countAndSayRegex(6)
+    assert "1113213211" == easy.countAndSayRegex(8)
+    assert "13112221" == easy.countAndSayRegex(7)
+    assert "312211" == easy.countAndSayRegex(6)
 
-    assert '1113213211' == easy.countAndSayRecursion(8)
-    assert '13112221' == easy.countAndSayRecursion(7)
-    assert '312211' == easy.countAndSayRecursion(6)
+    assert "1113213211" == easy.countAndSayRecursion(8)
+    assert "13112221" == easy.countAndSayRecursion(7)
+    assert "312211" == easy.countAndSayRecursion(6)
 
 
 def testMaxSubArray():
@@ -132,19 +127,21 @@ def testMaxSubArray():
 
 
 def testReorderLogs():
-    assert easy.reorderLogFiles([
-                "dig1 8 1 5 1",
-                "let1 art can",
-                "dig2 3 6",
-                "let2 own kit dig",
-                "let3 art zero"
-            ]) == [
-            "let1 art can",
-            "let3 art zero",
-            "let2 own kit dig",
+    assert easy.reorderLogFiles(
+        [
             "dig1 8 1 5 1",
-            "dig2 3 6"
+            "let1 art can",
+            "dig2 3 6",
+            "let2 own kit dig",
+            "let3 art zero",
         ]
+    ) == [
+        "let1 art can",
+        "let3 art zero",
+        "let2 own kit dig",
+        "dig1 8 1 5 1",
+        "dig2 3 6",
+    ]
 
 
 def testMaxProfit():
@@ -153,18 +150,18 @@ def testMaxProfit():
 
 def testReverseLinkedList():
     assertLinkedListsAreEqual(
-        easy.reverseLinkedList(
-            LinkedList([1, 2, 3, 4, 5]).head
-        ),
-        LinkedList([5, 4, 3, 2, 1]).head
+        easy.reverseLinkedList(LinkedList([1, 2, 3, 4, 5]).head),
+        LinkedList([5, 4, 3, 2, 1]).head,
     )
 
 
 def testIsAlienSorted():
-    assert easy.isAlienSorted(['hello', 'leetcode'], 'hlabcdefgijkmnopqrstuvwxyz')
+    assert easy.isAlienSorted(["hello", "leetcode"], "hlabcdefgijkmnopqrstuvwxyz")
 
     # noinspection SpellCheckingInspection
-    assert not easy.isAlienSorted(["word", "world", "row"], order="worldabcefghijkmnpqstuvxyz")
+    assert not easy.isAlienSorted(
+        ["word", "world", "row"], order="worldabcefghijkmnpqstuvxyz"
+    )
 
     # noinspection SpellCheckingInspection
     assert not easy.isAlienSorted(["apple", "app"], "abcdefghijklmnopqrstuvwxyz")
