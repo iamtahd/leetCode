@@ -1,4 +1,5 @@
-from utils.linkedList import ListNode, LinkedList
+from utils.linkedList import LinkedList, ListNode
+
 from .. import easy
 
 
