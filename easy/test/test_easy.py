@@ -173,3 +173,10 @@ def testIsAlienSorted():
 
 def testAddStrings():
     assert easy.addStrings("3", "4") == "7"
+
+
+def testIsLinkedPalindrome():
+    assert easy.isLinkedPalindrome(LinkedList([1, 2, 2, 1]).head)
+    assert not easy.isLinkedPalindrome(LinkedList([1, 2]).head)
+    assert easy.isLinkedPalindrome(LinkedList([]).head)
+    assert easy.isLinkedPalindrome(LinkedList([1]).head)

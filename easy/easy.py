@@ -451,3 +451,18 @@ def isAlienSorted(words: List[str], order: str) -> bool:
 
 def addStrings(num1: str, num2: str) -> str:
     return str(int(num1) + int(num2))
+
+
+def isLinkedPalindrome(head: ListNode) -> bool:
+    """
+    Given a singly linked list, determine if it is a palindrome
+
+    :param head: headNode of the linked list
+    :return: True if Palindrome, else False
+    """
+    values = []
+    current_node = head
+    while current_node is not None:
+        values.append(current_node.val)
+        current_node = current_node.next
+    return values == values[::-1]
