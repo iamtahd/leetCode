@@ -180,3 +180,20 @@ def testIsLinkedPalindrome():
     assert not easy.isLinkedPalindrome(LinkedList([1, 2]).head)
     assert easy.isLinkedPalindrome(LinkedList([]).head)
     assert easy.isLinkedPalindrome(LinkedList([1]).head)
+
+
+def testMinStackClass():
+    minStack = easy.MinStack()
+    minStack.push(-2)
+    minStack.push(0)
+    minStack.push(-3)
+
+    assert minStack.getMin() == -3
+
+    minStack.pop()
+    assert minStack.top() == 0
+    assert minStack.getMin() == -2
+
+
+def testMyHashMap():
+    assert False

@@ -466,3 +466,70 @@ def isLinkedPalindrome(head: ListNode) -> bool:
         values.append(current_node.val)
         current_node = current_node.next
     return values == values[::-1]
+
+
+class MinStack:
+    """
+    note: MUST BE A CONSTANT TIME SOLUTION!
+
+    Your MinStack object will be instantiated and called as such:
+        obj = MinStack()
+        obj.push(x)
+        obj.pop()
+        param_3 = obj.top()
+        param_4 = obj.getMin()
+    """
+
+    def __init__(self):
+        """ initialize your data structure here. """
+        self.stack = []
+
+    def push(self, x: int) -> None:
+        # If the stack is empty, then the min value
+        # must just be the first value we add
+        if not self.stack:
+            self.stack.append((x, x))
+            return
+
+        current_min = self.stack[-1][1]
+        self.stack.append((x, min(x, current_min)))
+
+    def pop(self) -> None:
+        self.stack.pop()
+
+    def top(self) -> int:
+        return self.stack[-1][0]
+
+    def getMin(self) -> int:
+        return self.stack[-1][1]
+
+
+class MyHashMap:
+    """
+    note: DO NOT USE dicts
+    Your MyHashMap object will be instantiated and called as such:
+        obj = MyHashMap()
+        obj.put(key,value)
+        param_2 = obj.get(key)
+        obj.remove(key)
+    """
+
+    def __init__(self):
+        """
+        Initialize your data structure here.
+        """
+
+    def put(self, key: int, value: int) -> None:
+        """
+        value will always be non-negative.
+        """
+
+    def get(self, key: int) -> int:
+        """
+        Returns the value to which the specified key is mapped, or -1 if this map contains no mapping for the key
+        """
+
+    def remove(self, key: int) -> None:
+        """
+        Removes the mapping of the specified value key if this map contains a mapping for the key
+        """
