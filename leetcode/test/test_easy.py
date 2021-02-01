@@ -1,3 +1,5 @@
+from copy import copy, deepcopy
+
 from utils.linkedList import LinkedList, ListNode
 
 from .. import easy
