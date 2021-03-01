@@ -1,6 +1,7 @@
 from typing import List
 
 
+# ------------- ACCESSING ARRAYS -------------
 def findMaxConsecutiveOnes(nums: List[int]) -> int:
     count = maxCount = 0
     for num in nums:
@@ -25,6 +26,7 @@ def sortedSquares(nums: List[int]) -> List[int]:
     return sorted([n*n for n in nums])
 
 
+# ------------- INSERTING ITEMS INTO ARRAYS -------------
 def duplicateZeros(arr: List[int]) -> None:
     duplicates = 0
     length = len(arr) - 1
@@ -92,6 +94,7 @@ def mergeSortedOptimized(nums1, m, nums2, n) -> None:
             p2 += 1
 
 
+# ------------- DELETING ITEMS FROM ARRAYS -------------
 def removeElement(nums: List[int], val: int) -> int:
     count = 0
     for i in range(len(nums)):
@@ -122,3 +125,75 @@ def removeDuplicates(nums: List[int]) -> int:
             j += 1
 
     return j
+
+
+# ------------- SEARCHING ARRAYS -------------
+def checkIfExist(arr: List[int]) -> bool:
+    """
+    Given an array arr of integers, check if there exists two integers
+    N and M such that N is the double of M ( i.e. N = 2 * M).
+    """
+    d = {}
+    for num in arr:
+        if num*2 in d or num/2 in d:
+            return True
+        else:
+            d[num] = 0
+    return False
+
+
+# Mine
+def myIsMountainArray(arr: List[int]) -> bool:
+
+    arrLen = len(arr)
+    if arrLen < 3:
+        return False
+
+    maxIndex = arr.index(max(arr))
+    if maxIndex == arrLen-1 or maxIndex == 0:
+        return False
+
+    for i in range(1, arrLen):
+        diff = arr[i] - arr[i-1]
+        if diff == 0:
+            return False
+        if diff > 0 and i > maxIndex:
+            return False
+        if diff < 0 and i < maxIndex:
+            return False
+
+    return True
+
+
+# Better Solution
+def isMountainArray(arr: List[int]) -> bool:
+    n = len(arr)
+    i = 0
+
+    # walk up
+    while i+1 < n and arr[i] < arr[i+1]:
+        i += 1
+
+    # make sure not at start or end of array before walk down
+    if i == 0 or i == n-1:
+        return False
+
+    # walk down
+    while i+1 < n and arr[i] > arr[i+1]:
+        i += 1
+
+    # make sure at end of array.
+    return i == n-1
+
+
+# ------------- IN-PLACE OPERATIONS WITH ARRAYS -------------
+def replaceElements(arr: List[int]) -> List[int]:
+    # crushed it on this one!
+    n = -1
+    for i in range(len(arr)-1, -1, -1):
+        tmp = arr[i]
+        arr[i] = n
+        if tmp > arr[i]:
+            n = tmp
+    return arr
+

@@ -3,7 +3,7 @@ from copy import copy
 import leetcode.arrays as arrays
 
 
-# Accessing Arrays
+# Accessing arrays
 def testLongestOnes():
     assert arrays.findMaxConsecutiveOnes([]) == 0
     assert arrays.findMaxConsecutiveOnes([0, 0, 0]) == 0
@@ -20,7 +20,7 @@ def testSortedSquares():
     assert arrays.sortedSquares([-4, -1, 0, 3, 10]) == [0, 1, 9, 16, 100]
 
 
-# Inserting Items into an Array
+# Inserting Items into an array
 def testDuplicateZeros():
     base = [1, 0, 2, 3, 0, 4, 5, 0]
     ans = [1, 0, 0, 2, 3, 0, 0, 4]
@@ -50,4 +50,24 @@ def testRemoveDuplicates():
     assert arrays.removeDuplicates([0, 0, 1, 1, 1, 2, 2, 3, 3, 4]) == 5
 
 
-# Searching for Items in an Array
+# Searching for Items in an array
+def testIfExist():
+    assert arrays.checkIfExist([10, 2, 5, 3]) is True
+    assert arrays.checkIfExist([7, 1, 14, 11]) is True
+    assert arrays.checkIfExist([3, 1, 7, 11]) is False
+    assert arrays.checkIfExist([-2, 0, 10, -19, 4, 6, -8]) is False
+    assert arrays.checkIfExist([0, 0]) is True
+
+
+def testValidMountainArray():
+    assert arrays.isMountainArray([1, 2]) is False
+    assert arrays.isMountainArray([3, 5, 5]) is False
+    assert arrays.isMountainArray([0, 3, 2, 1]) is True
+    assert arrays.isMountainArray([0, 2, 3, 4, 5, 2, 1, 0]) is True
+    assert arrays.isMountainArray([0, 2, 3, 3, 5, 2, 1, 0]) is False
+    assert arrays.isMountainArray([0, 1, 2, 3, 4, 5, 6, 7, 8, 9]) is False
+
+
+# In place array operations
+def testReplaceElements():
+    assert arrays.replaceElements([17, 18, 5, 4, 6, 1]) == [18, 6, 6, 6, 1, -1]
