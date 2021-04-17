@@ -196,4 +196,3 @@ def replaceElements(arr: List[int]) -> List[int]:
         if tmp > arr[i]:
             n = tmp
     return arr
-
