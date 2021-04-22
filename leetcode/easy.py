@@ -1,6 +1,7 @@
-from typing import List
+from typing import List, TYPE_CHECKING
 
-from utils.linkedList import ListNode
+if TYPE_CHECKING:
+    from utils.linkedList import ListNode
 
 
 def twoSum(nums: List[int], target: int) -> List[int]:
@@ -383,11 +384,13 @@ def reorderLogFiles(logs: List[str]) -> List[str]:
 
     Rules:
     - Reorder the logs so that all of the letter-logs come before any digit-log.
-    - The letter-logs are ordered lexicographically ignoring identifier, with the identifier used in case of ties.
+    - The letter-logs are ordered lexicographically ignoring identifier, with
+        the identifier used in case of ties.
     - The digit-logs should be put in their original order.
 
     Assumptions:
-        It is guaranteed that each log has at least one word after its identifier.
+        It is guaranteed that each log has at least one word after
+            its identifier.
         There are two varieties of logs: letter-logs and digit-logs.
 
     Return the final order of the logs.
