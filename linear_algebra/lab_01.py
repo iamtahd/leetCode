@@ -1,4 +1,5 @@
-
+# todo - restructure this so that it makes more sense for future labs? maybe just
+#   use a test file and a regular file?
 
 # Task 1: Use Python to find the number of minutes in a week.
 def minutesInWeek():
@@ -36,7 +37,7 @@ def squareItems(items):
 # Task 6: Write a comprehension over f0; 1; 2; 3; 4g whose value is the set consisting of the first five powers
 # of two, starting with 20.
 def expOfBase2(exponents):
-    return {2**exp for exp in exponents}
+    return {2**value for value in exponents}
 
 
 # Task 7: The value of the previous comprehension,
@@ -47,39 +48,9 @@ def multiplySets(set1, set2):
     return {a*b for a in set1 for b in set2}
 
 
-if __name__ == "__main__":
-
-    # Task 1
-    print(f'Task1: minutes in a week: {minutesInWeek()}')
-
-    # Task 2
-    x, y = 2304811, 47
-    print(f'Task2: remainder of {x} / {y} without using "%": {remainder(x, y)}')
-
-    # Task 3
-    x, y, z = 673, 900, 3
-    print(f'Task3: sum {x} + {y}, divisible by {z}: {isDivisibleSum(x, y, z)}')
-
-    # Task 4
-    # todo - clean up ?
-    print(f'Task4: check ternary: {simpleTernary(-9, 1/2)}')
-
-    # Task 5
-    s = {1, 2, 3, 4, 5}
-    print(f'Task5: square the set: {s} -> {squareItems(s)}')
-
-    # Task 6
-    exp = {0, 1, 2, 3, 4}
-    print(f'Task6: 2 raised to set of exponents: {exp} -> {expOfBase2(exp)}')
-
-    # Task 7
-    s1, s2 = {1, 2, 3}, {10, 11, 12}
-    print(f'Task7: multiplied union of sets {s1}, {s2} -> '
-          f'{multiplySets(s1, s2)}')
-
-    # Task 8
-    s1, s2 = {1, 2, 3}, {10, 11, 12}
-    print(f'Task8: multiply non-overlapping sets: {s1}, {s2} ->'
-          f' {multiplySets(s1, s2)}')
-
-    z = 1
+# Task 30: Ungraded Task: Write a procedure all 3 digit numbers(base, digits) with the following spec:
+# input: a positive integer base and the set digits which should be {0, 1, 2, ... , base - 1g}.
+# output: the set of all three-digit numbers where the base is base
+def all3DigitNumbers(base):
+    # todo
+    pass
