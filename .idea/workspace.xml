@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0ba7217d-b6c6-4d64-9154-463caa37bb6e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/linear_algebra/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/linear_algebra/test/test_lab_01.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/leetCode.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/leetCode.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linear_algebra/python_lab_01.py" beforeDir="false" afterPath="$PROJECT_DIR$/linear_algebra/lab_01.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/linked_list/linked_list.py" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/linked_list/linked_list.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/leetcode/linked_list/test/test_linked_list.py" beforeDir="false" afterPath="$PROJECT_DIR$/leetcode/linked_list/test/test_linked_list.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,29 +67,7 @@
       <recent name="C:\Users\mille\Projects\leetCode\easyCases" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.pytest in test_lab_01.py">
-    <configuration name="lab_01" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="leetCode" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/linear_algebra" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="C:\Users\todd\Projects\leetCode\linear_algebra\lab_01.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python tests.pytest for test_linked_list.test_remove_nth_node">
     <configuration name="Docker flake8" type="docker-deploy" factoryName="docker-image" server-name="Docker">
       <deployment type="docker-image">
         <settings>
@@ -100,23 +76,6 @@
           <option name="containerName" value="LeetCode" />
         </settings>
       </deployment>
-      <method v="2" />
-    </configuration>
-    <configuration name="pytest for test_linked_list.testDetectCycle_Floyd" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <module name="leetCode" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/leetcode/linked_list/test" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_parameters" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_linked_list.testDetectCycle_Floyd&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <configuration name="pytest for test_linked_list.testDetectCycle_HashTable" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
@@ -153,6 +112,40 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="pytest for test_linked_list.test_intersection" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="leetCode" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/leetcode/linked_list/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_linked_list.test_intersection&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for test_linked_list.test_remove_nth_node" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="leetCode" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/leetcode/linked_list/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_linked_list.test_remove_nth_node&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
     <configuration name="pytest in test_lab_01.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="leetCode" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -172,19 +165,19 @@
     </configuration>
     <list>
       <item itemvalue="Docker.Docker flake8" />
-      <item itemvalue="Python.lab_01" />
-      <item itemvalue="Python tests.pytest for test_linked_list.testDetectCycle_Floyd" />
       <item itemvalue="Python tests.pytest for test_linked_list.testDetectCycle_HashTable" />
       <item itemvalue="Python tests.pytest for test_linked_list.testHasCycle" />
       <item itemvalue="Python tests.pytest in test_lab_01.py" />
+      <item itemvalue="Python tests.pytest for test_linked_list.test_intersection" />
+      <item itemvalue="Python tests.pytest for test_linked_list.test_remove_nth_node" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.pytest for test_linked_list.test_remove_nth_node" />
+        <item itemvalue="Python tests.pytest for test_linked_list.test_intersection" />
         <item itemvalue="Python tests.pytest in test_lab_01.py" />
         <item itemvalue="Python tests.pytest for test_linked_list.testHasCycle" />
         <item itemvalue="Python tests.pytest for test_linked_list.testDetectCycle_HashTable" />
-        <item itemvalue="Python tests.pytest for test_linked_list.testDetectCycle_Floyd" />
-        <item itemvalue="Python.lab_01" />
       </list>
     </recent_temporary>
   </component>
@@ -245,7 +238,9 @@
       <workItem from="1622391137967" duration="600000" />
       <workItem from="1622563227863" duration="330000" />
       <workItem from="1622563594032" duration="5042000" />
-      <workItem from="1623079882390" duration="609000" />
+      <workItem from="1623079882390" duration="1283000" />
+      <workItem from="1623081215220" duration="9496000" />
+      <workItem from="1623273178881" duration="627000" />
     </task>
     <task id="LOCAL-00001" summary="#953 isAlienSorted - completed.">
       <created>1595704659724</created>
@@ -359,7 +354,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619912982571</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="DESKTOP - Corserea linear_algebra, python_lab_01.py .. updated to use test dir.">
+      <created>1623080533421</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1623080533421</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -394,7 +396,19 @@
     <MESSAGE value="DESKTOP - trying to get pre-commit hooks to run successfully" />
     <MESSAGE value="DESKTOP - working through Explore -&gt; Linked Lists learning." />
     <MESSAGE value="DESKTOP - Corserea linear_algebra, python_lab_01.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="DESKTOP - Corserea linear_algebra, python_lab_01.py" />
+    <MESSAGE value="DESKTOP - Corserea linear_algebra, python_lab_01.py .. updated to use test dir." />
+    <option name="LAST_COMMIT_MESSAGE" value="DESKTOP - Corserea linear_algebra, python_lab_01.py .. updated to use test dir." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/leetcode/linked_list/linked_list.py</url>
+          <line>314</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/leetCode$Unittests_for_easyCases_test_testFirstProblemSet_TestFirstProblemSet_testRemoveDuplicates.coverage" NAME="Unittests for easyCases.test.testFirstProblemSet.TestFirstProblemSet.testRemoveDuplicates Coverage Results" MODIFIED="1585930894551" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -412,6 +426,7 @@
     <SUITE FILE_PATH="coverage/leetCode$pytest_for_leetcode_test_test_easy_testFindNums.coverage" NAME="pytest for leetcode.test.test_easy.testFindNums Coverage Results" MODIFIED="1612109831719" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/leetCode$pytest_for_test_arrays_testValidMountainArray.coverage" NAME="pytest for test_arrays.testValidMountainArray Coverage Results" MODIFIED="1612716241073" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode/test" />
     <SUITE FILE_PATH="coverage/leetCode$pytest_for_test_linked_list_testDetectCycle_Floyd.coverage" NAME="pytest for test_linked_list.testDetectCycle_Floyd Coverage Results" MODIFIED="1619524711811" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode/linked_list/test" />
+    <SUITE FILE_PATH="coverage/leetCode$pytest_for_test_linked_list_test_intersection.coverage" NAME="pytest for test_linked_list.test_intersection Coverage Results" MODIFIED="1623155851649" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode/linked_list/test" />
     <SUITE FILE_PATH="coverage/leetCode$pytest_for_leetcode_test_test_medium_test_num_islands.coverage" NAME="pytest for leetcode.test.test_medium.test_num_islands Coverage Results" MODIFIED="1611446286280" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/leetCode$pytest_for_test_arrays_testSortArrayByParity.coverage" NAME="pytest for test_arrays.testSortArrayByParity Coverage Results" MODIFIED="1618681082830" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode/test" />
     <SUITE FILE_PATH="coverage/leetCode$python_lab_01.coverage" NAME="python_lab_01 Coverage Results" MODIFIED="1622157175903" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/linear_algebra" />
@@ -442,6 +457,7 @@
     <SUITE FILE_PATH="coverage/leetCode$pytest_for_test_arrays_testIfExist.coverage" NAME="pytest for test_arrays.testIfExist Coverage Results" MODIFIED="1612715045583" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode/test" />
     <SUITE FILE_PATH="coverage/leetCode$Unittests_for_easyCases_test_testFirstProblemSet_TestFirstProblemSet_testIsValid.coverage" NAME="Unittests for easyCases.test.testFirstProblemSet.TestFirstProblemSet.testIsValid Coverage Results" MODIFIED="1585790885265" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/leetCode$pytest_for_test_linked_list_testScenario.coverage" NAME="pytest for test_linked_list.testScenario Coverage Results" MODIFIED="1619180789812" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode/linked_list/test" />
+    <SUITE FILE_PATH="coverage/leetCode$pytest_for_test_linked_list_test_remove_nth_node.coverage" NAME="pytest for test_linked_list.test_remove_nth_node Coverage Results" MODIFIED="1623157683048" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode/linked_list/test" />
     <SUITE FILE_PATH="coverage/leetCode2$Unittests_for_googleChallenges_test_test_challenges_TestEasySet_testSolution1.coverage" NAME="Unittests for googleChallenges.test.test_challenges.TestEasySet.testSolution1 Coverage Results" MODIFIED="1590104823019" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/leetCode$Unittests_for_easyCases_test_testFirstProblemSet_TestEasySet_testSearchInsert.coverage" NAME="Unittests for easyCases.test.testFirstProblemSet.TestEasySet.testSearchInsert Coverage Results" MODIFIED="1585946881295" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/leetCode$pytest_for_test_arrays_testFindThirdMaximumNumber.coverage" NAME="pytest for test_arrays.testFindThirdMaximumNumber Coverage Results" MODIFIED="1619045736718" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode/test" />

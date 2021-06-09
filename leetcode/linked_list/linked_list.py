@@ -38,6 +38,35 @@ class MyLinkedList:
             curr = curr.next
         return str(nodes)
 
+    def __and__(self, other):
+        if isinstance(other, MyLinkedList):
+            _map = set()
+
+            curr = self.head
+            while curr is not None:
+                _map.add(curr)
+                curr = curr.next
+
+            curr = other.head
+            while curr is not None:
+                if curr in _map:
+                    return curr
+                curr = curr.next
+
+            return None
+        else:
+            return NotImplemented
+
+    def append(self, other: "MyLinkedList") -> None:
+        if isinstance(other, MyLinkedList):
+            curr = self.head
+            while curr.next is not None:
+                curr = curr.next
+            curr.next = other.head
+            self.size += other.size
+        else:
+            raise NotImplemented
+
     def get(self, index: int) -> int:
         """
         Get the value of the index-th node in the linked list. If the
@@ -258,7 +287,32 @@ class MyLinkedList:
         return None
 
 
+def removeNthFromEnd(head: Node, n: int) -> Optional[Node]:
+    """
+    Given the head of a linked list, remove the nth node from the end of the
+    list and return its head.
 
+    :param head: head Node of a linked list
+    :param n: nth node to remove from end
+
+    :return: head
+    """
+    if n < 0 or n > 30:
+        return None
+
+    curr = head
+    if n == 0:
+        head = curr.next
+
+    else:
+
+        count = 0
+        while curr.next is not None and n < count:
+            curr = curr.next
+            count += 1
+        curr.next = curr.next.next
+
+    return head
 
 
 

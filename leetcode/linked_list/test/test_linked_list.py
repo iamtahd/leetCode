@@ -4,7 +4,7 @@ https://leetcode.com/explore/learn/card/linked-list/209/singly-linked-list/1290/
 """
 import pytest
 
-from leetcode.linked_list.linked_list import MyLinkedList
+from leetcode.linked_list.linked_list import MyLinkedList, Node, removeNthFromEnd
 
 
 @pytest.fixture
@@ -78,3 +78,22 @@ def testDetectCycle_HashTable():
     linkedList.connectTailToIndex(1)
     connector = linkedList.head.next
     assert linkedList.detectCycle_Hash(head=linkedList.head) == connector
+
+
+def test_intersection():
+    first = MyLinkedList.fromSequence([4, 1])
+    second = MyLinkedList.fromSequence([5, 6, 1])
+    intersected = MyLinkedList.fromSequence([8, 4, 5])
+
+    first.append(intersected)
+    second.append(intersected)
+
+    assert first & second == intersected.head
+
+
+def test_remove_nth_node():
+    linked1 = MyLinkedList.fromSequence([1, 2, 3, 4, 5])
+    linked2 = MyLinkedList.fromSequence([1])
+    assert removeNthFromEnd(linked1.head, 2) == [1, 2, 3, 5]
+    assert removeNthFromEnd(linked2.head, 1) == []
+
